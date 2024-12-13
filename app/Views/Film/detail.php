@@ -6,7 +6,7 @@
     <div class="container mt-4">
     <div class="d-flex">
         <div class="card" style="width: 18rem; flex-shrink: 0;">
-            <img src="/img/<?= $film['cover']; ?>" class="card-img-top" alt="Card Image">
+            <img src="/img/<?= $film['cover']; ?>" class="card-img-top" alt="<?= ($film['judul']); ?>">
             <div class="card-body">
                 <h5 class="card-title"><?= $film['judul']; ?></h5>
             </div>

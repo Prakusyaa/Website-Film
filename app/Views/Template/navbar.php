@@ -10,19 +10,19 @@
     <title><?= $title; ?></title>
     <style>
         .navbar-brand  {
-            font-family: "Parkinsans", serif;
-            font-optical-sizing: auto;
-            font-size: 2rem;
+          font-family: "Parkinsans", serif;
+          font-optical-sizing: auto;
+          font-size: 2rem;
         }
 
         body {
-            overflow: scroll;
+          overflow: scroll;
         }
 
         /* Menyembunyikan scrollbar */
         body::-webkit-scrollbar {
-            width: 0px;
-            height: 0px;
+          width: 0px;
+          height: 0px;
         }
     </style>
 </head>
