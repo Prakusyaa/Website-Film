@@ -26,11 +26,11 @@
                 </thead>
                 <tbody>
                 <?php foreach ($film as $k): ?>
-                        <tr>
-                            <td><?= $k['judul']; ?></td>
-                            <td><a href="/Film/<?= $k['slug']; ?>" class="btn btn-info">Read More...</a></td>
-                        </tr>
-                    <?php endforeach; ?>
+                    <tr>
+                        <td><?= $k['judul']; ?></td>
+                        <td><a href="/Film/<?= $k['slug']; ?>" class="btn btn-info">Read More...</a></td>
+                    </tr>
+                <?php endforeach; ?>
                 </tbody>
             </table>
         </div>

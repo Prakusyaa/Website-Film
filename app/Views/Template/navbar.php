@@ -14,12 +14,22 @@
             font-optical-sizing: auto;
             font-size: 2rem;
         }
+
+        body {
+            overflow: scroll;
+        }
+
+        /* Menyembunyikan scrollbar */
+        body::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+        }
     </style>
 </head>
 <body>
     <nav class="navbar bg-dark">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 ms-4 h1 text-white fw-bolder">Filmjir.id</span>
+          <span class="navbar-brand mb-0 ms-4 h1 text-white fw-bolder"><a href="/" class="nav-link text-white fw-bolder">Filmjir.id</a></span>
           <ul class="nav nav-underline">
             <?= $active ?>
           </ul>

@@ -19,7 +19,7 @@
 
         <div class="ms-5">
             <h3>Synopsis</h3>
-            <p class="fs-4"><?= $film['synopsis']; ?></p>
+            <p class="fs-5"><?= $film['synopsis']; ?></p>
         </div>
     </div>
 </div>
@@ -30,9 +30,6 @@
         <input type="hidden" name="_method" value="DELETE">
         <button type="submit" class="btn btn-danger">Delete</button>
     </form>
-</div>
-<div class="col-md-6">
-    <a href="/Films" class="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-2">Kembali Ke List Film</a>
 </div>
 <?php else: ?>
     <div class="alert alert-danger">

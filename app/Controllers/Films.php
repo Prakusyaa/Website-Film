@@ -11,7 +11,7 @@
         {
             $this->filmModel = new FilmModel();
         }
-        public function index(): string
+        public function list(): string
         {
             $data = [
                 'title' => 'Filmjir - List Film',
@@ -24,7 +24,7 @@
                 <a class="nav-link text-white fw-bolder" href="/Pages/about">About</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link active text-white me-4 fw-bolder" href="/Films/index">List</a>
+                <a class="nav-link active text-white me-4 fw-bolder" href="/Films/list">List</a>
                 </li>
                 '
             ];
@@ -45,7 +45,7 @@
                 <a class="nav-link text-white fw-bolder" href="/Pages/about">About</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link active text-white me-4 fw-bolder" href="/Films/index">List</a>
+                <a class="nav-link active text-white me-4 fw-bolder" href="/Films/list">List</a>
                 </li>
                 '
             ];
@@ -75,7 +75,7 @@
                 <a class="nav-link text-white fw-bolder" href="/Pages/about">About</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link active text-white me-4 fw-bolder" href="/Films/index">List</a>
+                <a class="nav-link active text-white me-4 fw-bolder" href="/Films/list">List</a>
                 </li>
                 '
             ];
@@ -97,7 +97,7 @@
                 <a class="nav-link text-white fw-bolder" href="/Pages/about">About</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link active text-white me-4 fw-bolder" href="/Films/index">List</a>
+                <a class="nav-link active text-white me-4 fw-bolder" href="/Films/list">List</a>
                 </li>
                 '
             ];
@@ -135,7 +135,7 @@
             ]);
 
             session()->setFlashdata('pesan', 'Data Telah Berhasil Ditambahkan');
-            return redirect()->to('Films');
+            return redirect()->to('/Films/list');
         }
 
         public function update($id)
@@ -172,6 +172,6 @@
                 'rilis' => (int)$this->request->getVar('rilis')
             ]);            
             session()->setFlashdata('pesan', 'Data telah berhasil diedit');
-            return redirect()->to('Films');
+            return redirect()->to('/Films/list');
         }
     }
