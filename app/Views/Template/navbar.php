@@ -9,27 +9,72 @@
     <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
     <title><?= $title; ?></title>
     <style>
-        .navbar-brand  {
+      .navbar-brand {
           font-family: "Parkinsans", serif;
           font-optical-sizing: auto;
           font-size: 2rem;
-        }
+      }
 
-        body {
+      body {
           overflow: scroll;
-        }
+      }
 
-        /* Menyembunyikan scrollbar */
-        body::-webkit-scrollbar {
+      body::-webkit-scrollbar {
           width: 0px;
           height: 0px;
+      }
+
+      @media screen and (min-width: 320px) {
+        .navbar-brand {
+          font-family: "Parkinsans", serif;
+          font-optical-sizing: auto;
+          font-size: 1rem;
         }
+
+        .nav {
+            font-size: 0.8rem;
+        }
+      }
+
+      @media screen and (min-width: 375px) {
+        .navbar-brand {
+          font-family: "Parkinsans", serif;
+          font-optical-sizing: auto;
+          font-size: 1rem;
+        }
+
+        .nav {
+            font-size: 0.8rem;
+        }
+      }
+
+      @media screen and (min-width: 425px) {
+        .navbar-brand {
+          font-family: "Parkinsans", serif;
+          font-optical-sizing: auto;
+          font-size: 1.7rem;
+        }
+
+        .nav {
+            font-size: 0.8rem;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        .nav {
+            font-size: 1rem;
+        }
+
+        .navbar-brand {
+          margin-left: 1rem;
+        }
+      }
     </style>
 </head>
 <body>
     <nav class="navbar bg-dark">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 ms-4 h1 text-white fw-bolder"><a href="/" class="nav-link text-white fw-bolder">Filmjir.id</a></span>
+        <a class="navbar-brand text-white fw-bolder" href="/">Filmjir.id</a>
           <ul class="nav nav-underline">
             <?= $active ?>
           </ul>
