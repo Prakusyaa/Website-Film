@@ -189,15 +189,26 @@
         }
     }
 
+    @media screen and (min-width: 1025px) and (max-width: 1439px) {
+    /* Desain yang sama seperti 1440px */
+        .card {
+            height: 300px;
+        }
+        .card img {
+            height: 260px;
+        }
+    }
+
+
     @media screen and (min-width: 1440px) {
         .card img {
             width: 100%;
-            height: 130px;
+            height: 260px;
             object-fit: cover;
         }
 
         .card {
-            height: 170px;
+            height: 300px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
