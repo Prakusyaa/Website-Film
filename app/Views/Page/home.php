@@ -6,214 +6,14 @@
         text-decoration: none;
     }
 
-    @media screen and (min-width: 320px) {
-        .display {
-            font-size: 1.4rem;
-        }
+    .card-title {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
 
-        .lead {
-            font-size: 0.8rem;
-        }
-
-        .d-grid .btn {
-            display: none;
-        }
-        
-        .rows {
-            display: flex;
-            flex-wrap: wrap;
-            margin-left: -0.5rem;
-            margin-right: -0.5rem;
-        }
-
-        .holder {
-            flex: 0 0 33.3333%;
-            max-width: 33.3333%;
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .card {
-            height: 130px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            margin-top: 8px;
-        }
-
-        .card img {
-            width: 100%;
-            height: 100px;
-            object-fit: cover;
-        }
-
-        .card-title {
-            font-size: 10px;
-            text-align: center;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            width: 100%;
-        }
-
-        .card-body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem;
-        }
-    }
-
-    @media screen and (min-width: 375px) {
-        .card img {
-            width: 100%;
-            height: 120px;
-            object-fit: cover;
-        }
-
-        .card {
-            height: 160px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            margin-top: 8px;
-        }
-    }
-
-    @media screen and (min-width: 425px) {
-        .card img {
-            width: 100%;
-            height: 130px;
-            object-fit: cover;
-        }
-
-        .card {
-            height: 170px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            margin-top: 8px;
-        }
-    }
-
-    @media screen and (min-width: 768px) {
-        .d-grid .btn {
-            display: inline-block;
-            height: 40px;
-            width: 150px;
-        }
-
-        .rows {
-            display: flex;
-            flex-wrap: wrap;
-            margin-left: -0.5rem;
-            margin-right: -0.5rem;
-        }
-
-        .holder {
-            flex: 0 0 16.66665%;
-            max-width: 16.66665%;
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .card {
-            height: 150px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            margin-top: 8px;
-        }
-
-        .card img {
-            width: 100%;
-            height: 120px;
-            object-fit: cover;
-        }
-
-        .card-title {
-            font-size: 10px;
-            text-align: center;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            width: 100%;
-        }
-
-        .card-body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem;
-        }
-    }
-
-    @media screen and (min-width: 1024px) {
-        .display {
-            font-size: 2.2rem;
-        }
-
-        .card {
-            height: 190px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            margin-top: 8px;
-        }
-
-        .card img {
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-        }
-
-        .card-title {
-            font-size: 10px;
-            text-align: center;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            width: 100%;
-        }
-
-        .card-body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.5rem;
-        }
-    }
-
-    @media screen and (min-width: 1025px) and (max-width: 1439px) {
-    /* Desain yang sama seperti 1440px */
-        .card {
-            height: 300px;
-        }
-        .card img {
-            height: 260px;
-        }
-    }
-
-
-    @media screen and (min-width: 1440px) {
-        .card img {
-            width: 100%;
-            height: 260px;
-            object-fit: cover;
-        }
-
-        .card {
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            margin-top: 8px;
-        }
+        font-size: calc(0.5rem + 1vw);
+        text-align: center;
     }
 </style>
 
@@ -235,10 +35,10 @@
 </header>
 
 <div class="container my" id="target">
-    <div class="rows">
+    <div class="row mt-2 row-cols-sm-6 row-cols-3 g-4">
         <?php foreach ($films as $k): ?>
             <div class="holder">
-                <div class="card shadow" style="width: 100%;">
+                <div class="card h-100 shadow" style="width: 100%;">
                     <img src="/img/<?= ($k['cover']); ?>" class="card-img-top" alt="<?= ($k['judul']); ?>">
                     <div class="card-body">
                         <a class="card-title text-primary fw-bolder" href="/Film/<?= $k['slug']; ?>"><?= ($k['judul']); ?></a>
