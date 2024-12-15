@@ -66,6 +66,38 @@
         }
     }
 
+    @media screen and (min-width: 375px) {
+        .card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .card {
+            height: 160px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 8px;
+        }
+    }
+
+    @media screen and (min-width: 425px) {
+        .card img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+        }
+
+        .card {
+            height: 170px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 8px;
+        }
+    }
+
     @media screen and (min-width: 768px) {
         .d-grid .btn {
             display: inline-block;
@@ -89,7 +121,7 @@
         }
 
         .card {
-            height: 130px;
+            height: 150px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -98,7 +130,7 @@
 
         .card img {
             width: 100%;
-            height: 100px;
+            height: 120px;
             object-fit: cover;
         }
 
@@ -117,6 +149,59 @@
             align-items: center;
             gap: 0.5rem;
             padding: 0.5rem;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .display {
+            font-size: 2.2rem;
+        }
+
+        .card {
+            height: 190px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 8px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            font-size: 10px;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        .card img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+        }
+
+        .card {
+            height: 170px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 8px;
         }
     }
 </style>
