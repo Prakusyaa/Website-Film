@@ -9,7 +9,7 @@
 
                 <?php if (session()->getFlashdata('validate')): ?>
                     <div class="alert alert-primary" role="alert">
-                        <?= session()->getFlashdata('validate'); ?>
+                        <?= session()->getFlashdata(key: 'validate'); ?>
                     </div>
                 <?php endif; ?>
 

@@ -15,4 +15,4 @@ $routes->get('/', 'Pages::index');
 $routes->get('/Film/create', 'Film::create');
 $routes->get('/Film/(:any)', 'Films::detail/$1');
 $routes->get('/Film/edit/(:segment)', 'Film::edit/$1');
-$routes->delete('/film/delete/(:num)', 'Films::delete/$1'); 
+$routes->delete('/Film/delete/(:num)', 'Films::delete/$1');

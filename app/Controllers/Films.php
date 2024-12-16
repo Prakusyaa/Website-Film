@@ -117,10 +117,9 @@
                     'rilis' => 'required',
                 ])
             ) {
-                // Menyimpan error ke dalam session dan menampilkan kembali form dengan inputan yang ada
                 $validation = \Config\Services::validation();
                 session()->setFlashdata('validate', 'Harap Isi Formulir Dengan Benar');
-                return redirect()->to('/film/create')->withInput()->with('validation', $validation);
+                return redirect()->to('/Films/create')->withInput()->with('validation', $validation);
             }
 
             $slug = url_title($this->request->getVar('judul'), '-', true);

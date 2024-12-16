@@ -9,7 +9,7 @@
                 <input type="hidden" name="slug" value="<?= $film['slug']; ?>">
                 <div class="mb-3 mt-5">
                     <label for="InputFilm" class="form-label">Judul Film:</label>
-                    <input type="text" class="form-control" id="InputFilm" placeholder="Tuliskan Judul Film.."
+                    <input type="text" autocomplete="off" class="form-control" id="InputFilm" placeholder="Tuliskan Judul Film.."
                         name="judul" value="<?= $film['judul']; ?>">
                 </div>
                 <div class="mb-3">
