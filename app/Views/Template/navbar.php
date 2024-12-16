@@ -10,64 +10,22 @@
     <title><?= $title; ?></title>
     <style>
       .navbar-brand {
-          font-family: "Parkinsans", serif;
-          font-optical-sizing: auto;
-          font-size: 2rem;
+        font-family: "Parkinsans", serif;
+        font-optical-sizing: auto;
+        font-size: calc(1vw + 1rem);
+      }
+
+      .nav {
+        font-size: calc(0.7vw + 0.5rem);
       }
 
       body {
-          overflow: scroll;
+        overflow: scroll;
       }
 
       body::-webkit-scrollbar {
-          width: 0px;
-          height: 0px;
-      }
-
-      @media screen and (min-width: 320px) {
-        .navbar-brand {
-          font-family: "Parkinsans", serif;
-          font-optical-sizing: auto;
-          font-size: 1rem;
-        }
-
-        .nav {
-            font-size: 0.8rem;
-        }
-      }
-
-      @media screen and (min-width: 375px) {
-        .navbar-brand {
-          font-family: "Parkinsans", serif;
-          font-optical-sizing: auto;
-          font-size: 1rem;
-        }
-
-        .nav {
-            font-size: 0.8rem;
-        }
-      }
-
-      @media screen and (min-width: 425px) {
-        .navbar-brand {
-          font-family: "Parkinsans", serif;
-          font-optical-sizing: auto;
-          font-size: 1.7rem;
-        }
-
-        .nav {
-            font-size: 0.8rem;
-        }
-      }
-
-      @media screen and (min-width: 768px) {
-        .nav {
-            font-size: 1rem;
-        }
-
-        .navbar-brand {
-          margin-left: 1rem;
-        }
+        width: 0px;
+        height: 0px;
       }
     </style>
 </head>
